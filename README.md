@@ -1,4 +1,4 @@
-# RWan – Portfolio de Rodrigo Martínez ✨
+# RWan – Portfolio of Rodrigo Martínez ✨
 
 A clean, modern, and responsive portfolio website showcasing the creative work and aesthetic vision of graphic designer Rodrigo Martínez. Built with performance and user experience in mind.
 
