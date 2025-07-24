@@ -1,0 +1,13 @@
+---
+import AboutMeInfo from "./AboutMeInfo.astro";
+import AboutMeCategories from "./AboutMeCategories.astro";
+import AboutMeStack from "./AboutMeStack.astro";
+---
+
+<section class="flex flex-col xl:flex-row mx-5 gap-5 animate__animated animate__fadeIn place-content-center">
+  <AboutMeInfo />
+  <div class="basis-1/4">
+    <AboutMeCategories />
+    <AboutMeStack />
+  </div>
+</section>

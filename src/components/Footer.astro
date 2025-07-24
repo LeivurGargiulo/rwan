@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components";
+import SocialsFooter from "./SocialsFooter.astro";
+import Theme from "./Theme.astro";
+---
+
+<footer class="w-full bg-neutral text-white px-4 p-4">
+  <div class="mx-auto flex flex-row items-center justify-between">
+    <div class="btn btn-ghost flex items-center gap-2 ">
+      <Icon name="mdi:brush" size="30" />
+      <h1 class="text-2xl font-bold ">RWan</h1>
+    </div>
+
+    <div class="hidden md:flex flex-1 justify-end">
+      <p>Copyright © {new Date().getFullYear()} | Rodrigo Martínez</p>
+    </div>
+
+    <div class="hidden md:flex items-center gap-4">
+      <SocialsFooter />
+      <Theme />
+    </div>
+
+    <div class="flex items-center gap-2 md:hidden">
+      <Theme />
+      <div class="dropdown dropdown-end dropdown-top">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <Icon name="mdi:dots-vertical" size="30" />
+        </label>
+        <div
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-secondary rounded-box w-52 flex flex-col flex-"
+        >
+          <SocialsFooter />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

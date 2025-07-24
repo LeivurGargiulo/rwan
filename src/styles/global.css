@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@plugin "daisyui" {
+  themes: false;
+}
+
+@theme {
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-roboto: "Roboto Slab", serif;
+}
+
+@plugin "daisyui/theme" {
+  name: "rdesign-light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(96% 0.015 12.422);
+  --color-base-200: oklch(94% 0.03 12.58);
+  --color-base-300: oklch(89% 0.058 10.001);
+  --color-base-content: oklch(41% 0.159 10.272);
+  --color-primary: oklch(52% 0.223 3.958);
+  --color-primary-content: oklch(96% 0.003 264.542);
+  --color-secondary: oklch(51% 0.096 186.391);
+  --color-secondary-content: oklch(98% 0.019 200.873);
+  --color-accent: oklch(0% 0 0);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(51% 0.222 16.935);
+  --color-neutral-content: oklch(96% 0.015 12.422);
+  --color-info: oklch(51% 0.096 186.391);
+  --color-info-content: oklch(98% 0.019 200.873);
+  --color-success: oklch(43% 0.078 188.216);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(58% 0.253 17.585);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(65% 0.241 354.308);
+  --color-error-content: oklch(97% 0.014 343.198);
+  --radius-selector: 0.5rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.3125rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "rdesign-dark";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(12% 0.042 264.695);
+  --color-base-200: oklch(13% 0.028 261.692);
+  --color-base-300: oklch(40% 0.153 2.432);
+  --color-base-content: oklch(97% 0.001 106.424);
+  --color-primary: oklch(70% 0.04 256.788);
+  --color-primary-content: oklch(12% 0.042 264.695);
+  --color-secondary: oklch(59% 0.249 0.584);
+  --color-secondary-content: oklch(14% 0.005 285.823);
+  --color-accent: oklch(89% 0.058 10.001);
+  --color-accent-content: oklch(28% 0.066 53.813);
+  --color-neutral: oklch(27% 0.105 12.094);
+  --color-neutral-content: oklch(98% 0.001 106.423);
+  --color-info: oklch(45% 0.188 13.697);
+  --color-info-content: oklch(96% 0.007 247.896);
+  --color-success: oklch(77% 0.152 181.912);
+  --color-success-content: oklch(27% 0.046 192.524);
+  --color-warning: oklch(71% 0.202 349.761);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.5rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.3125rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 0;
+  --noise: 0;
+}
