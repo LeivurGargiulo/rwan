@@ -2,11 +2,232 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-  title="RDesign Portfolio"
-  description="Portfolio de Rodrigo Martínez, Diseñador Gráfico y Animador"
->
-    <div class="py-5 bg-[url(/gradient.svg)]">
-        <div><p>Hola, soy Rodrigo Martínez, Diseñador Gráfico y Animador. Me encanta crear y compartir experiencias creativas.</p></div>
+<BaseLayout>
+  <div class="xl:flex xl:flex-row">
+    <div
+      class="m-5 card lg:card-side bg-base-100 outline outline-neutral transform hover:shadow-lg shadow-neutral"
+      data-aos="fade"
+    >
+      <div class="card-body">
+        <h1 class="card-title text-3xl">Sobre Mi</h1>
+        <p class="text-xl text-justify">
+          Soy diseñador gráfico con enfoque en branding, diseño editorial y
+          diseño de información, apasionado por traducir ideas en imágenes
+          claras, potentes y funcionales. Me especializo en el uso de
+          herramientas como Photoshop, Illustrator, InDesign, FontLab y Canva, y
+          tengo una fuerte afinidad por el trabajo tipográfico.
+        </p>
+        <p class="text-xl text-justify">
+          Mi estilo se mueve entre lo minimalista y lo impactante, influenciado
+          por corrientes como el vaporwave, el neo pop y el suprematismo,
+          buscando siempre una estética que combine estructura con emoción
+          visual.
+        </p>
+        <p class="text-xl text-justify">
+          Además de mi rol como diseñador, también me desempeño como profesor de
+          animación, Photoshop e Illustrator, lo que refuerza mi compromiso con
+          la claridad, la enseñanza y la evolución constante del oficio.
+        </p>
+        <p class="text-xl text-justify">
+          Mi objetivo profesional es seguir desarrollándome en el ámbito
+          editorial o en la industria de los videojuegos, dos universos donde el
+          diseño no solo decora, sino que comunica, organiza y emociona.
+        </p>
+        <div
+          class="card-actions align-bottom mt-3">
+          <button class="btn btn-secondary">Portfolio</button>
+        </div>
+      </div>
     </div>
+    <div
+      class="m-5 card lg:card-side bg-base-100 outline outline-neutral transform hover:shadow-lg shadow-neutral" data-aos="fade"
+    >
+      <div class="card-body">
+        <figure class="m-5 card justify-center">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+          />
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div
+    class="m-5 card lg:card-side bg-base-100 outline outline-neutral transform hover:shadow-lg shadow-neutral" data-aos="fade"
+  >
+    <div class="card-body">
+      <h2 class="text-2xl text-center font-bold">Objetivos</h2>
+      <ul
+        class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+      >
+        <li>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <div class="text-lg font-black">Diseño editorial</div>
+            Desarrollarme como diseñador gráfico especializado en diseño editorial,
+            trabajando en revistas, editoriales o medios impresos y digitales, para
+            comunicar ideas de manera clara y atractiva.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-end md:mb-10">
+            <div class="text-lg font-black">
+              Branding y diseño de información
+            </div>
+            Aplicar mis conocimientos en branding y diseño de información para fortalecer
+            la identidad visual de marcas y facilitar la comprensión mediante piezas
+            gráficas bien diseñadas.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <div class="text-lg font-black">
+              Interés en la industria de videojuegos
+            </div>
+            Tengo un gran interés y sueño de poder incursionar en la industria de
+            los videojuegos, aportando creatividad y diseño para proyectos futuros.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-end md:mb-10">
+            <div class="text-lg font-black">Docencia y aprendizaje</div>
+            Combinar mi experiencia como docente de animación y diseño con el aprendizaje
+            continuo para crecer profesionalmente y compartir mis conocimientos con
+            otros.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <div class="text-lg font-black">Creatividad e innovación</div>
+            Mantenerme siempre abierto a nuevas tendencias y estilos del diseño,
+            integrando creatividad e innovación en cada proyecto que desarrollo.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="m-5 my-9 card lg:card-side bg-base-100 outline outline-neutral transform hover:shadow-lg shadow-neutral" data-aos="fade"
+  >
+    <div class="card-body">
+      <h2 class="text-4xl font-bold">El diseño es el universo mismo:</h2>
+      <p class="text-xl text-justify">
+        No empecé a estudiar diseño por la plata. Ojalá. Hoy me preocupa, claro,
+        porque vivir del arte no es fácil, y a veces la realidad pesa. Pero lo
+        cierto es que caí en este mundo porque siempre me gustó el arte.
+        Dibujar, pintar, observar… no porque fuera particularmente bueno, sino
+        porque me hacía sentir algo. El arte, lo visual, siempre me habló más
+        fuerte que cualquier palabra. Me atraviesa. Me conmueve. Y cuando algo
+        me impacta visual o sonoramente, no puedo evitar sentir admiración.
+      </p>
+      <p class="text-xl text-justify">
+        Nunca me llevé del todo bien con el estudio formal. Soy más de
+        sensaciones que de fórmulas. Pero al descubrir el diseño gráfico sentí
+        que había encontrado algo más grande: no era solo arte, no era solo
+        estética. Era una forma de entender el mundo. Una mezcla entre lógica,
+        intuición y sensibilidad. Un lenguaje humano que está en todos lados,
+        aunque a veces pase desapercibido.
+      </p>
+      <p class="text-xl text-justify">
+        Con el tiempo, me di cuenta de que diseñar no es simplemente hacer cosas
+        “lindas”. Es comunicar, traducir, organizar, emocionar. Es construir
+        puentes invisibles entre personas que nunca se van a conocer. Es
+        increíble pensar cómo un símbolo puede significar lo mismo acá que en
+        Japón. Cómo un color o un empaque nos puede hacer elegir un producto sin
+        leer una sola palabra. O cómo podemos decir que algo “se ve barato” solo
+        con verlo. Eso es diseño. Eso es humanidad visual.
+      </p>
+      <p class="text-xl text-justify">
+        Y sí, a veces duele que muchos no lo entiendan. Que lo bastardeen. Que
+        crean que es solo mover letras o hacer logos apurados. Me ha pasado
+        sentir que no valoran esta profesión. Incluso he escuchado que “de esto
+        no se vive”. Puede ser. Pero ¿sabés qué? No me importa.
+      </p>
+      <p class="text-xl text-justify">
+        Porque yo estoy enamorado de esto. Del poder de una buena tipografía, de
+        un afiche bien pensado, de una identidad visual que te cuenta una
+        historia sin decir una sola frase. Amo que una grilla ordene el caos.
+        Que un cartel te salve de perderte. Que un diseño te haga sentir algo
+        sin que sepas por qué.
+      </p>
+      <p class="text-xl text-justify">
+        Puedo tener dificultades económicas, claro. Puedo dudar a veces. Pero
+        nunca voy a dudar de mi amor por esta forma de ver la vida. El diseño no
+        es solo una profesión. Es una manera de entender el mundo. Es el
+        universo mismo, hecho imagen.
+      </p>
+    </div>
+  </div>
 </BaseLayout>

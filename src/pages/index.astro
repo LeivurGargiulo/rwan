@@ -1,17 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
-import AboutMe from "../components/AboutMe.astro";
-import Proyects from "../components/Proyects.astro";
+import Hero from "../components/index/Hero.astro";
+import AboutMe from "../components/index/AboutMe.astro";
+import Proyects from "../components/index/Proyects.astro";
 ---
 
-<BaseLayout
-  title="RDesign Portfolio"
-  description="Portfolio de Rodrigo Martínez, Diseñador Gráfico y Animador"
->
-    <div class="py-5">
-      <Hero />
-      <AboutMe />
-      <Proyects />
-    </div>
+<BaseLayout>
+  <Hero />
+  <AboutMe />
+  <Proyects />
 </BaseLayout>

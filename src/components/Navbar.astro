@@ -2,61 +2,99 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<ul class="menu menu-horizontal px-1 hidden items-center lg:flex text-lg">
-  <li data-aos="fade-down">
-    <a href="/">
-      <Icon name="mdi:home" size="20" />
-      Inicio</a
-    >
-  </li>
-  <li data-aos="fade-down">
-    <a href="/about">
-      <Icon name="mdi:information" size="20" />
-      Experiencia</a
-    >
-  </li>
-  <li data-aos="fade-down">
-    <div class="dropdown dropdown-center group relative">
-      <label
-        tabindex="0"
-        class="text-lg w-full flex items-center gap-2 cursor-pointer"
-      >
-        <Icon name="mdi:file-document" size="20" />
-        Proyectos
-      </label>
-      <ul
-        tabindex="0"
-        class="dropdown-content menu p-2 shadow bg-secondary rounded-box w-40 text-md mt-2" data-aos="fade"
-      >
-        <li>
-          <a href="/projects/1">
-            <Icon name="mdi:projector-screen" size="20" />
-            Brading</a
-          >
-        </li>
-        <li>
-          <a href="/projects/2">
-            <Icon name="mdi:projector-screen" size="20" />
-            Editorial</a
-          >
-        </li>
-      </ul>
-    </div>
-  </li>
+<nav class="z-index: 2">
+  <ul class="menu menu-horizontal px-1 hidden lg:flex text-lg relative z-1">
     <li data-aos="fade-down">
-      <a href="/about">
+      <a href="/" class="flex items-center">
+        <Icon name="mdi:home" size="20" />
+        Inicio</a
+      >
+    </li>
+    <li data-aos="fade-down">
+      <a href="/about" class="flex items-center">
+        <Icon name="mdi:information" size="20" />
+        Sobre Mi</a
+      >
+    </li>
+    <li data-aos="fade-down">
+      <details class="dropdown dropdown-center">
+        <summary class="text-lg w-full flex gap-2 cursor-pointer items-center">
+          <Icon name="mdi:file-document" size="20" />Proyectos
+        </summary>
+        <ul tabindex="0" class="dropdown-content z-4 menu shadow bg-secondary rounded-box text-md w-max grid grid-cols-3 grid-rows-3">
+          <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Papelería</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Identidad Visual</a
+            >
+                      <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Branding</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Ilustración</a
+            >
+                      <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Editorial</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Social Media</a
+            >
+                      <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Tipografía</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Diseño de Información</a
+            >
+          </li>
+        </ul>
+      </details>
+    </li>
+    <li data-aos="fade-down">
+      <a href="/blog" class="flex items-center">
         <Icon name="mdi:blog" size="20" />
-        Sobre mí</a
+        Blog</a
+      >
+    </li>
+        <li data-aos="fade-down">
+      <a href="/blog" class="flex items-center">
+        <Icon name="mdi:contact" size="20" />
+        Contacto</a
       >
     </li>
   </ul>
-  
+</nav>
+
+<!-- MOBILE -->
+<nav>
   <ul class="menu menu-vertical lg:hidden text-lg w-full">
-    <li data-aos="fade"><a href="/"><Icon name="mdi:home" size="20" />Inicio</a></li>
     <li data-aos="fade">
-      <a href="/about"><Icon name="mdi:information" size="20" />Experiencia</a>
+      <a href="/"><Icon name="mdi:home" size="20" />Inicio</a>
     </li>
-  
+    <li data-aos="fade">
+      <a href="/about"><Icon name="mdi:information" size="20" />Sobre Mi</a>
+    </li>
+
     <li data-aos="fade">
       <details>
         <summary class="flex items-center gap-2">
@@ -64,32 +102,59 @@ import { Icon } from "astro-icon/components";
           Proyectos
         </summary>
         <ul>
-        <li>
-          <a href="/projects/1">
-            <Icon name="mdi:projector-screen" size="20" />
-            Brading</a
-          >
-        </li>
-        <li>
-          <a href="/projects/2">
-            <Icon name="mdi:projector-screen" size="20" />
-            Editorial</a
-          >
-        </li>
-      </ul>
-    </details>
-  </li>
-  <li data-aos="fade" ><a href="/blog"><Icon name="mdi:blog" size="20" />Sobre mí</a></li>
-</ul>
-<style>
-  /* Ensure dropdown appears under the navbar */
-  .dropdown-center .dropdown-content {
-    top: 100%;
-    margin-top: 1.5rem;
-    position: absolute;
-    z-index: 50;
-  }
-  .dropdown-center {
-    position: relative;
-  }
-</style>
+          <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Brading</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Editorial</a
+            >
+          </li>
+                    <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Brading</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Editorial</a
+            >
+          </li>
+                    <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Brading</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Editorial</a
+            >
+          </li>
+                    <li>
+            <a href="/projects/1">
+              <Icon name="mdi:projector-screen" size="20" />
+              Brading</a
+            >
+          </li>
+          <li>
+            <a href="/projects/2">
+              <Icon name="mdi:projector-screen" size="20" />
+              Editorial</a
+            >
+          </li>
+        </ul>
+      </details>
+    </li>
+    <li data-aos="fade">
+      <a href="/blog"><Icon name="mdi:blog" size="20" />Sobre mí</a>
+    </li>
+  </ul>
+</nav>
