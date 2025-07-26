@@ -30,7 +30,6 @@ RWan is a minimalist portfolio designed to highlight Rodrigo's design work throu
 | **[DaisyUI](https://daisyui.com/)** | Beautiful Tailwind component library |
 | **[Lenis](https://lenis.studiofreight.com/)** | Smooth scroll experience |
 | **[AOS](https://michalsnik.github.io/aos/)** | Animate on scroll library |
-| **[Animate.css](https://animate.style/)** | CSS animation utilities |
 | **[Astro Icon](https://github.com/natemoo-re/astro-icon)** | Seamless icon integration |
 | **[Iconify](https://iconify.design/)** | Material Design Icons |
 
@@ -70,37 +69,6 @@ npm run preview      # Preview production build
 npm run astro        # Run Astro CLI commands
 ```
 
-## 📁 Project Structure
-
-```
-rwan/
-├── public/
-│   ├── images/
-│   │   ├── projects/           # Project showcase images
-│   │   ├── rodrigo.jpg         # Profile photo
-│   │   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── About.astro         # About section with profile
-│   │   ├── Contact.astro       # Contact form and social links
-│   │   ├── Footer.astro        # Site footer
-│   │   ├── Header.astro        # Navigation and theme toggle
-│   │   ├── Hero.astro          # Landing hero section
-│   │   ├── Projects.astro      # Portfolio showcase grid
-│   │   └── ThemeIcon.astro     # Theme switcher component
-│   ├── layouts/
-│   │   └── Layout.astro        # Main page layout
-│   ├── pages/
-│   │   └── index.astro         # Single-page application
-│   └── styles/
-│       └── global.css          # Global styles and animations
-├── astro.config.mjs
-├── tailwind.config.mjs
-├── package.json
-└── README.md
-
-```
-
 ## 🎨 Design System
 
 The portfolio implements a sophisticated single-page design that tells Rodrigo's story through distinct, interconnected sections:
@@ -125,7 +93,7 @@ The portfolio implements a sophisticated single-page design that tells Rodrigo's
 
 ## 👥 Credits
 
-**Design**: [Rodrigo Martínez](https://github.com/rodrigo-martinez) - The creative vision and aesthetic direction  
+**Design**: [Rodrigo Martínez]() - The creative vision and aesthetic direction  
 **Development**: [Leivur Gargiulo](https://github.com/leivur-gargiulo) - Technical implementation and optimization
 
 ## 📄 License
