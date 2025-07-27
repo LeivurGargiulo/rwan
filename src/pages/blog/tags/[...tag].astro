@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const posts = await getCollection("blog");
+const tag = Astro.params.tag;
+
+const filteredPosts = posts.filter(post => 
+  post.data.tags?.includes(tag)
+);
+
+// Sort by date
+filteredPosts.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout title={`Posts tagged with ${tag}`}>
+  <h1>Posts tagged with {tag}</h1>
+  
+  <ul>
+    {filteredPosts.map(post => (
+      <li>
+        <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+        <span>{post.data.date.toLocaleDateString()}</span>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

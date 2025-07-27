@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import { getUniqueTags } from "../../../utils/tags";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const posts = await getCollection("blog");
+const tags = getUniqueTags(posts);
+---
+
+<BaseLayout title="All Tags">
+  <h1>All Tags</h1>
+  
+  <ul>
+    {tags.map(tag => (
+      <li>
+        <a href={`/tags/${tag}`}>{tag}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
