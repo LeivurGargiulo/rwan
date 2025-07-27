@@ -1,0 +1,81 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const allBlogPosts = await Astro.glob('../../content/blog/*.md');
+
+allBlogPosts.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.pubDate);
+  const dateB = new Date(b.frontmatter.pubDate);
+  return dateB.getTime() - dateA.getTime();
+});
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="container mx-auto px-4 py-8">
+				<h1 class="text-4xl font-bold text-center mb-10">Our Blog</h1>
+
+				{allBlogPosts.length === 0 ? (
+					<p class="text-center text-gray-600">No blog posts found yet. Check back soon!</p>
+				) : (
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{allBlogPosts.map((post) => {
+							// Convert pubDate to a Date object for display
+							const pubDate = new Date(post.frontmatter.pubDate);
+							return (
+							<article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+								<a href={post.url}>
+									{post.frontmatter.heroImage && (
+										<img
+											src={post.frontmatter.heroImage}
+											alt={post.frontmatter.title}
+											class="w-full h-48 object-cover"
+										/>
+									)}
+									<div class="p-6">
+										<h2 class="text-xl font-semibold text-gray-900 mb-2">{post.frontmatter.title}</h2>
+										<p class="text-gray-600 text-sm mb-4">
+											{/* Use the converted pubDate object here */}
+											<time datetime={pubDate.toISOString()}>
+												{pubDate.toLocaleDateString('en-US', {
+													year: 'numeric',
+													month: 'long',
+													day: 'numeric',
+												})}
+											</time>
+										</p>
+										<p class="text-gray-700 leading-relaxed">{post.frontmatter.description}</p>
+									</div>
+								</a>
+							</article>
+						)})}
+					</div>
+				)}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	/* You can add specific styles here or use a global stylesheet */
+	main {
+		min-height: calc(100vh - var(--header-height, 4rem) - var(--footer-height, 4rem));
+	}
+</style>

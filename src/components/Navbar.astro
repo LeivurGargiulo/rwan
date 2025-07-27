@@ -1,19 +1,20 @@
 ---
 import { Icon } from "astro-icon/components";
+import HeaderLink from './HeaderLink.astro';
 ---
 
 <nav class="z-index: 2">
   <ul class="menu menu-horizontal px-1 hidden lg:flex text-lg relative z-1">
     <li data-aos="fade-down">
-      <a href="/" class="flex items-center">
+      <HeaderLink href="/" class="flex items-center">
         <Icon name="mdi:home" size="20" />
-        Inicio</a
+        Inicio</HeaderLink
       >
     </li>
     <li data-aos="fade-down">
-      <a href="/about" class="flex items-center">
+      <HeaderLink href="/about" class="flex items-center">
         <Icon name="mdi:information" size="20" />
-        Sobre Mi</a
+        Sobre Mi</HeaderLink
       >
     </li>
     <li data-aos="fade-down">
@@ -23,63 +24,63 @@ import { Icon } from "astro-icon/components";
         </summary>
         <ul tabindex="0" class="dropdown-content z-4 menu shadow bg-secondary rounded-box text-md w-max grid grid-cols-3 grid-rows-3">
           <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Papelería</a
+              Papelería</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Identidad Visual</a
+              Identidad Visual</HeaderLink
             >
                       <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Branding</a
+              Branding</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Ilustración</a
+              Ilustración</HeaderLink
             >
                       <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Editorial</a
+              Editorial</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Social Media</a
+              Social Media</HeaderLink
             >
                       <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Tipografía</a
+              Tipografía</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Diseño de Información</a
+              Diseño de Información</HeaderLink
             >
           </li>
         </ul>
       </details>
     </li>
     <li data-aos="fade-down">
-      <a href="/blog" class="flex items-center">
+      <HeaderLink href="/blog" class="flex items-center">
         <Icon name="mdi:blog" size="20" />
-        Blog</a
+        Blog</HeaderLink
       >
     </li>
         <li data-aos="fade-down">
-      <a href="/blog" class="flex items-center">
+      <HeaderLink href="/contact" class="flex items-center">
         <Icon name="mdi:contact" size="20" />
-        Contacto</a
+        Contacto</HeaderLink
       >
     </li>
   </ul>
@@ -89,10 +90,10 @@ import { Icon } from "astro-icon/components";
 <nav>
   <ul class="menu menu-vertical lg:hidden text-lg w-full">
     <li data-aos="fade">
-      <a href="/"><Icon name="mdi:home" size="20" />Inicio</a>
+      <HeaderLink href="/"><Icon name="mdi:home" size="20" />Inicio</HeaderLink>
     </li>
     <li data-aos="fade">
-      <a href="/about"><Icon name="mdi:information" size="20" />Sobre Mi</a>
+      <HeaderLink href="/about"><Icon name="mdi:information" size="20" />Sobre Mi</HeaderLink>
     </li>
 
     <li data-aos="fade">
@@ -103,58 +104,58 @@ import { Icon } from "astro-icon/components";
         </summary>
         <ul>
           <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Brading</a
+              Brading</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Editorial</a
+              Editorial</HeaderLink
             >
           </li>
                     <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Brading</a
+              Brading</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Editorial</a
+              Editorial</HeaderLink
             >
           </li>
                     <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Brading</a
+              Brading</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Editorial</a
+              Editorial</HeaderLink
             >
           </li>
                     <li>
-            <a href="/projects/1">
+            <HeaderLink href="/projects/1">
               <Icon name="mdi:projector-screen" size="20" />
-              Brading</a
+              Brading</HeaderLink
             >
           </li>
           <li>
-            <a href="/projects/2">
+            <HeaderLink href="/projects/2">
               <Icon name="mdi:projector-screen" size="20" />
-              Editorial</a
+              Editorial</HeaderLink
             >
           </li>
         </ul>
       </details>
     </li>
     <li data-aos="fade">
-      <a href="/blog"><Icon name="mdi:blog" size="20" />Sobre mí</a>
+      <HeaderLink href="/blog"><Icon name="mdi:blog" size="20" />Sobre mí</HeaderLink>
     </li>
   </ul>
 </nav>

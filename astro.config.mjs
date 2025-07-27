@@ -10,5 +10,7 @@ export default defineConfig({
   },
 
   integrations: [icon()],
+
+  site: 'http://localhost:4321/',
+
 });
-// Trigger server restart
